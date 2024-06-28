@@ -55,12 +55,27 @@ class IndustrialMagick:
             return (image,filtered_params[-1],"",)
         else:
             return (image,"","Error processing your command. Check ComfyUI logs.",)
+
+class IndustrialMagickImageIngest:
+    @classmethod
+    def INPUT_TYPES(s):
+        return {
+            "required": {
+                "image": ("IMAGE",),
+            }
+        }
+
+    RETURN_TYPES = ("STRING",)
+    RETURN_NAMES = ("image_path",)
     CATEGORY = "IndustrialMagick"
+
 
 NODE_CLASS_MAPPINGS = {
     "IndustrialMagick": IndustrialMagick,
+    "IndustrialMagickImageIngest":IndustrialMagickImageIngest
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "IndustrialMagick": "Industrial Magick",
+    "IndustrialMagickImageIngest": "Industrial Magick Image Loader"
 }
