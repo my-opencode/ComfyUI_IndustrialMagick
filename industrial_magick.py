@@ -19,3 +19,11 @@ class IndustrialMagick:
     RETURN_TYPES = ("IMAGE","STRING","STRING",)
     RETURN_NAMES = ("image","image_path","error",)
     CATEGORY = "IndustrialMagick"
+
+NODE_CLASS_MAPPINGS = {
+    "IndustrialMagick": IndustrialMagick,
+}
+
+NODE_DISPLAY_NAME_MAPPINGS = {
+    "IndustrialMagick": "Industrial Magick",
+}
