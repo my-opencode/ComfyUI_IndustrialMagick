@@ -21,6 +21,19 @@ def read_image_from_path(image_path):
         image = torch.from_numpy(image)[None,]
     return image
 
+def get_image_temp_path():
+    timestamp = now.strftime("%Y%m%d_%H%M%S")
+    img_file_name = f'ImageMagick_{timestamp}.png'
+    if not os.path.exists(tmp_path):
+        os.makedirs(tmp_path)
+    img_full_path = f'{tmp_path}/{img_file_name}'
+    img_full_path = os.path.normpath(img_full_path)
+    if os.path.exists(img_full_path):
+    random_suffix = uuid.uuid4().hex
+    img_file_name = f'ImageMagick_{timestamp}_{random_suffix}.png'
+    img_full_path = os.path.join(tmp_path, img_file_name)
+    return img_full_path
+
 class IndustrialMagick:
     @classmethod
     def INPUT_TYPES(cls):
@@ -77,16 +90,7 @@ class IndustrialMagickImageIngest:
             i = 255. * ii.cpu().numpy()
             img = Image.fromarray(np.clip(i, 0, 255).astype(np.uint8))
             now = datetime.datetime.now()
-            timestamp = now.strftime("%Y%m%d_%H%M%S")
-            img_file_name = f'ImageMagick_{timestamp}.png'
-            if not os.path.exists(tmp_path):
-                os.makedirs(tmp_path)
-            img_full_path = f'{tmp_path}/{img_file_name}'
-            img_full_path = os.path.normpath(img_full_path)
-            if os.path.exists(img_full_path):
-                random_suffix = uuid.uuid4().hex
-                img_file_name = f'ImageMagick_{timestamp}_{random_suffix}.png'
-                img_full_path = os.path.join(tmp_path, img_file_name)
+            img_full_path = get_image_temp_path()
             img.save(img_full_path)
         return (img_full_path,)
 
