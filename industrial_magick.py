@@ -40,6 +40,7 @@ class IndustrialMagick:
         inputs = {
             "required": {
                 "return_image": ("BOOLEAN", {"default": False}),
+                "last_param_is_save_path": ("BOOLEAN", {"default": False}),
                 "param_count": ("INT", {"default": 5, "min": 0, "max": 50, "step": 1})
             }
         }
@@ -52,11 +53,14 @@ class IndustrialMagick:
     FUNCTION = "execute"
     CATEGORY = "IndustrialMagick"
 
-    def execute(self, return_image, param_count, **kwargs):
+    def execute(self, return_image, last_param_is_save_path, param_count, **kwargs):
         # Extract values from kwargs
         params = [kwargs.get(f"param_{i}") for i in range(1, param_count + 1)]
 
         params.insert(0,"magick")
+
+        if(last_param_is_save_path is False):
+            params.append(get_image_temp_path())
 
         filtered_params = [param for param in params if param not in ["",None]]
 
