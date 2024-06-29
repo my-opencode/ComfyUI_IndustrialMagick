@@ -16,9 +16,9 @@ function handleParamVisibility(node, countValue) {
             origProps[pname] = { origType: paramWidget.type, origComputeSize: paramWidget.computeSize };
         }
 
-        if (i <= countValue) {
-            paramWidget.type = origProps[paramWidget.name].origType;
-            paramWidget.computeSize = origProps[paramWidget.name].origComputeSize;
+        if (i <= countValue || node.inputs?.some?.(input => input.name === pname)) {
+            paramWidget.type = origProps[pname].origType;
+            paramWidget.computeSize = origProps[pname].origComputeSize;
         }
         else {
             paramWidget.type = HIDDEN_TAG;
