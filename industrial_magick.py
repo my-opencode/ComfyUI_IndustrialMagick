@@ -4,6 +4,7 @@ import numpy as np
 import os
 import subprocess
 import torch
+import uuid
 from PIL import Image, ImageOps, ImageSequence
 
 comfy_path = os.path.dirname(folder_paths.__file__)
