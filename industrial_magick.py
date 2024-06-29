@@ -29,9 +29,9 @@ def get_image_temp_path():
     img_full_path = f'{tmp_path}/{img_file_name}'
     img_full_path = os.path.normpath(img_full_path)
     if os.path.exists(img_full_path):
-    random_suffix = uuid.uuid4().hex
-    img_file_name = f'ImageMagick_{timestamp}_{random_suffix}.png'
-    img_full_path = os.path.join(tmp_path, img_file_name)
+        random_suffix = uuid.uuid4().hex
+        img_file_name = f'ImageMagick_{timestamp}_{random_suffix}.png'
+        img_full_path = os.path.join(tmp_path, img_file_name)
     return img_full_path
 
 class IndustrialMagick:
