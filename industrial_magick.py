@@ -22,6 +22,7 @@ def read_image_from_path(image_path):
     return image
 
 def get_image_temp_path():
+    now = datetime.datetime.now()
     timestamp = now.strftime("%Y%m%d_%H%M%S")
     img_file_name = f'ImageMagick_{timestamp}.png'
     if not os.path.exists(tmp_path):
@@ -93,7 +94,6 @@ class IndustrialMagickImageIngest:
         for (batch_number, ii) in enumerate(image):
             i = 255. * ii.cpu().numpy()
             img = Image.fromarray(np.clip(i, 0, 255).astype(np.uint8))
-            now = datetime.datetime.now()
             img_full_path = get_image_temp_path()
             img.save(img_full_path)
         return (img_full_path,)
