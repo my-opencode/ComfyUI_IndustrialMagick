@@ -1,0 +1,786 @@
+{
+  "last_node_id": 11,
+  "last_link_id": 17,
+  "nodes": [
+    {
+      "id": 4,
+      "type": "CR Split String",
+      "pos": [
+        10,
+        230
+      ],
+      "size": {
+        "0": 315,
+        "1": 162
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "string_1",
+          "type": "*",
+          "links": [
+            4
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "string_2",
+          "type": "*",
+          "links": [
+            5
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "string_3",
+          "type": "*",
+          "links": [],
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "string_4",
+          "type": "*",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Split String"
+      },
+      "widgets_values": [
+        "-fx u+#888888",
+        " "
+      ]
+    },
+    {
+      "id": 7,
+      "type": "Simple String",
+      "pos": [
+        400,
+        530
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            9
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Simple String"
+      },
+      "widgets_values": [
+        "rectangle 10,10 190,50"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "Simple String",
+      "pos": [
+        400,
+        630
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            11
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Simple String"
+      },
+      "widgets_values": [
+        "rectangle 10,60 190,100"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "Simple String",
+      "pos": [
+        400,
+        740
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            13
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Simple String"
+      },
+      "widgets_values": [
+        "rectangle 10,110 190,150"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "Simple String",
+      "pos": [
+        400,
+        840
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            15
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Simple String"
+      },
+      "widgets_values": [
+        "rectangle 10,160 190,200"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "CR Split String",
+      "pos": [
+        10,
+        30
+      ],
+      "size": {
+        "0": 315,
+        "1": 162
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "string_1",
+          "type": "*",
+          "links": [
+            1
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "string_2",
+          "type": "*",
+          "links": [
+            2
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "string_3",
+          "type": "*",
+          "links": [
+            3
+          ],
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "string_4",
+          "type": "*",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Split String"
+      },
+      "widgets_values": [
+        "-size 200x210 xc:black",
+        " "
+      ]
+    },
+    {
+      "id": 6,
+      "type": "Simple String",
+      "pos": [
+        400,
+        420
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            8,
+            10,
+            12,
+            14
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Simple String"
+      },
+      "widgets_values": [
+        "-draw"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "CR Split String",
+      "pos": [
+        400,
+        200
+      ],
+      "size": {
+        "0": 315,
+        "1": 162
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "string_1",
+          "type": "*",
+          "links": [
+            6
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "string_2",
+          "type": "*",
+          "links": [
+            7
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "string_3",
+          "type": "*",
+          "links": [],
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "string_4",
+          "type": "*",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Split String"
+      },
+      "widgets_values": [
+        "-fill #353535",
+        " "
+      ]
+    },
+    {
+      "id": 11,
+      "type": "Simple String",
+      "pos": [
+        810,
+        890
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            17
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Simple String"
+      },
+      "widgets_values": [
+        "E:\\test.png"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "PreviewImage",
+      "pos": [
+        1630,
+        30
+      ],
+      "size": {
+        "0": 210,
+        "1": 250
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 16
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 1,
+      "type": "IndustrialMagick",
+      "pos": [
+        1210,
+        30
+      ],
+      "size": [
+        340,
+        410
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "param_1",
+          "type": "STRING",
+          "link": 1,
+          "widget": {
+            "name": "param_1"
+          }
+        },
+        {
+          "name": "param_2",
+          "type": "STRING",
+          "link": 2,
+          "widget": {
+            "name": "param_2"
+          }
+        },
+        {
+          "name": "param_3",
+          "type": "STRING",
+          "link": 3,
+          "widget": {
+            "name": "param_3"
+          }
+        },
+        {
+          "name": "param_4",
+          "type": "STRING",
+          "link": 4,
+          "widget": {
+            "name": "param_4"
+          }
+        },
+        {
+          "name": "param_5",
+          "type": "STRING",
+          "link": 5,
+          "widget": {
+            "name": "param_5"
+          }
+        },
+        {
+          "name": "param_6",
+          "type": "STRING",
+          "link": 6,
+          "widget": {
+            "name": "param_6"
+          }
+        },
+        {
+          "name": "param_7",
+          "type": "STRING",
+          "link": 7,
+          "widget": {
+            "name": "param_7"
+          }
+        },
+        {
+          "name": "param_8",
+          "type": "STRING",
+          "link": 8,
+          "widget": {
+            "name": "param_8"
+          }
+        },
+        {
+          "name": "param_9",
+          "type": "STRING",
+          "link": 9,
+          "widget": {
+            "name": "param_9"
+          }
+        },
+        {
+          "name": "param_10",
+          "type": "STRING",
+          "link": 10,
+          "widget": {
+            "name": "param_10"
+          }
+        },
+        {
+          "name": "param_11",
+          "type": "STRING",
+          "link": 11,
+          "widget": {
+            "name": "param_11"
+          }
+        },
+        {
+          "name": "param_12",
+          "type": "STRING",
+          "link": 12,
+          "widget": {
+            "name": "param_12"
+          }
+        },
+        {
+          "name": "param_13",
+          "type": "STRING",
+          "link": 13,
+          "widget": {
+            "name": "param_13"
+          }
+        },
+        {
+          "name": "param_14",
+          "type": "STRING",
+          "link": 14,
+          "widget": {
+            "name": "param_14"
+          }
+        },
+        {
+          "name": "param_15",
+          "type": "STRING",
+          "link": 15,
+          "widget": {
+            "name": "param_15"
+          }
+        },
+        {
+          "name": "param_16",
+          "type": "STRING",
+          "link": 17,
+          "widget": {
+            "name": "param_16"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            16
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "image_path",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "error",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IndustrialMagick"
+      },
+      "widgets_values": [
+        true,
+        16,
+        16,
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      3,
+      0,
+      1,
+      0,
+      "STRING"
+    ],
+    [
+      2,
+      3,
+      1,
+      1,
+      1,
+      "STRING"
+    ],
+    [
+      3,
+      3,
+      2,
+      1,
+      2,
+      "STRING"
+    ],
+    [
+      4,
+      4,
+      0,
+      1,
+      3,
+      "STRING"
+    ],
+    [
+      5,
+      4,
+      1,
+      1,
+      4,
+      "STRING"
+    ],
+    [
+      6,
+      5,
+      0,
+      1,
+      5,
+      "STRING"
+    ],
+    [
+      7,
+      5,
+      1,
+      1,
+      6,
+      "STRING"
+    ],
+    [
+      8,
+      6,
+      0,
+      1,
+      7,
+      "STRING"
+    ],
+    [
+      9,
+      7,
+      0,
+      1,
+      8,
+      "STRING"
+    ],
+    [
+      10,
+      6,
+      0,
+      1,
+      9,
+      "STRING"
+    ],
+    [
+      11,
+      8,
+      0,
+      1,
+      10,
+      "STRING"
+    ],
+    [
+      12,
+      6,
+      0,
+      1,
+      11,
+      "STRING"
+    ],
+    [
+      13,
+      9,
+      0,
+      1,
+      12,
+      "STRING"
+    ],
+    [
+      14,
+      6,
+      0,
+      1,
+      13,
+      "STRING"
+    ],
+    [
+      15,
+      10,
+      0,
+      1,
+      14,
+      "STRING"
+    ],
+    [
+      16,
+      1,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      17,
+      11,
+      0,
+      1,
+      15,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7513148009015781,
+      "offset": [
+        255.35838607499917,
+        221.76176418700007
+      ]
+    }
+  },
+  "version": 0.4
+}
