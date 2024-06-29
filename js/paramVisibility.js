@@ -16,7 +16,7 @@ function handleParamVisibility(node, countValue) {
             origProps[pname] = { origType: paramWidget.type, origComputeSize: paramWidget.computeSize };
         }
 
-        if (i <= countValue || node.inputs?.some?.(input => input.name === pname)) {
+        if (i <= countValue && !node.inputs?.some?.(input => input.name === pname)) {
             paramWidget.type = origProps[pname].origType;
             paramWidget.computeSize = origProps[pname].origComputeSize;
         }
