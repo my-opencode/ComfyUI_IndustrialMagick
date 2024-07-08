@@ -9,6 +9,6 @@ Repository = "https://github.com/my-opencode/ComfyUI_IndustrialMagick"
 #  Used by Comfy Registry https://comfyregistry.org
 
 [tool.comfy]
-PublisherId = "@industrialvectors"
+PublisherId = "industrialvectors"
 DisplayName = "ComfyUI_IndustrialMagick"
 Icon = "https://raw.githubusercontent.com/my-opencode/ComfyUI_IndustrialMagick/main/logo-small.png"
