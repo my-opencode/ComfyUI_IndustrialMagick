@@ -1,6 +1,6 @@
 {
-  "last_node_id": 14,
-  "last_link_id": 12,
+  "last_node_id": 15,
+  "last_link_id": 15,
   "nodes": [
     {
       "id": 9,
@@ -9,12 +9,12 @@
         360,
         770
       ],
-      "size": [
-        320,
-        80
-      ],
+      "size": {
+        "0": 320,
+        "1": 80
+      },
       "flags": {},
-      "order": 5,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -53,13 +53,13 @@
         "1": 80
       },
       "flags": {},
-      "order": 8,
+      "order": 5,
       "mode": 0,
       "inputs": [
         {
           "name": "text",
           "type": "STRING",
-          "link": 3,
+          "link": 15,
           "widget": {
             "name": "text"
           }
@@ -92,13 +92,13 @@
         "1": 80
       },
       "flags": {},
-      "order": 7,
+      "order": 4,
       "mode": 0,
       "inputs": [
         {
           "name": "text",
           "type": "STRING",
-          "link": 2,
+          "link": 14,
           "widget": {
             "name": "text"
           }
@@ -132,118 +132,18 @@
         "1": 26
       },
       "flags": {},
-      "order": 6,
+      "order": 3,
       "mode": 4,
       "inputs": [
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 1
+          "link": 13
         }
       ],
       "properties": {
         "Node name for S&R": "PreviewImage"
       }
-    },
-    {
-      "id": 6,
-      "type": "IndustrialMagick",
-      "pos": [
-        0,
-        490
-      ],
-      "size": [
-        320,
-        362
-      ],
-      "flags": {},
-      "order": 0,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": [
-            9
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "image_path",
-          "type": "STRING",
-          "links": [
-            5
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "error",
-          "type": "STRING",
-          "links": [
-            6
-          ],
-          "shape": 3,
-          "slot_index": 2
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "IndustrialMagick"
-      },
-      "widgets_values": [
-        true,
-        10,
-        "-size",
-        "320x100",
-        "xc:lightblue",
-        "-pointsize",
-        "36",
-        "-fill",
-        "blue",
-        "-draw",
-        "text 25,65 'Industrial Magick'",
-        "E:\\industrial-magick-test.png",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
     },
     {
       "id": 8,
@@ -252,12 +152,12 @@
         360,
         640
       ],
-      "size": [
-        320,
-        80
-      ],
+      "size": {
+        "0": 320,
+        "1": 80
+      },
       "flags": {},
-      "order": 4,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -282,7 +182,7 @@
       },
       "widgets_values": [
         "",
-        "E:\\industrial-magick-test.png"
+        "E:\\ComfyUI_fresh\\ComfyUI\\temp\\ImageMagick_20240629_211755.png"
       ]
     },
     {
@@ -292,12 +192,12 @@
         710,
         490
       ],
-      "size": [
-        320,
-        290
-      ],
+      "size": {
+        "0": 320,
+        "1": 290
+      },
       "flags": {},
-      "order": 3,
+      "order": 6,
       "mode": 0,
       "inputs": [
         {
@@ -327,7 +227,7 @@
         "Node name for S&R": "PreviewBridge"
       },
       "widgets_values": [
-        "$undefined-0"
+        "$12-0"
       ]
     },
     {
@@ -338,7 +238,7 @@
         488.1457233886719
       ],
       "size": {
-        "0": 210,
+        "0": 252,
         "1": 26
       },
       "flags": {},
@@ -368,116 +268,16 @@
       }
     },
     {
-      "id": 1,
-      "type": "IndustrialMagick",
-      "pos": [
-        0,
-        30
-      ],
-      "size": {
-        "0": 320,
-        "1": 362
-      },
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": [
-            1
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "image_path",
-          "type": "STRING",
-          "links": [
-            2
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "error",
-          "type": "STRING",
-          "links": [
-            3
-          ],
-          "shape": 3,
-          "slot_index": 2
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "IndustrialMagick"
-      },
-      "widgets_values": [
-        false,
-        10,
-        "-size",
-        "320x100",
-        "xc:lightblue",
-        "-pointsize",
-        "36",
-        "-fill",
-        "blue",
-        "-draw",
-        "text 25,65 'Industrial Magick'",
-        "E:\\industrial-magick-test.png",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
-      ]
-    },
-    {
       "id": 11,
       "type": "ShowText|pysssss",
       "pos": [
         1334,
         488.1457233886719
       ],
-      "size": [
-        320,
-        80
-      ],
+      "size": {
+        "0": 320,
+        "1": 80
+      },
       "flags": {},
       "order": 10,
       "mode": 0,
@@ -504,7 +304,68 @@
       },
       "widgets_values": [
         "",
-        "E:\\ComfyUI_fresh\\ComfyUI\\temp\\ImageMagick_20240629_002641.png"
+        "E:\\ComfyUI_fresh\\ComfyUI/temp\\ImageMagick_20240629_211755_cec4ec767fb74f4e84b426a6205571c2.png"
+      ]
+    },
+    {
+      "id": 14,
+      "type": "PreviewImage",
+      "pos": [
+        1690,
+        613.1457233886728
+      ],
+      "size": {
+        "0": 210,
+        "1": 250
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 12
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 5,
+      "type": "CR Text",
+      "pos": [
+        780,
+        60
+      ],
+      "size": {
+        "0": 680,
+        "1": 96
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "Sample ImageMagick command",
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "magick -size 320x100 xc:lightblue  -pointsize 36 -fill blue -draw \"text 25,65 'Industrial Magick'\" text_draw.gif"
       ]
     },
     {
@@ -516,7 +377,7 @@
       ],
       "size": [
         320,
-        220
+        190
       ],
       "flags": {},
       "order": 11,
@@ -562,11 +423,12 @@
       },
       "widgets_values": [
         true,
-        4,
-        "",
+        false,
+        3,
+        "-rotate",
         "-rotate",
         "90",
-        "E:\\industrial-magick-test-rotated.png",
+        "",
         "",
         "",
         "",
@@ -615,92 +477,209 @@
       ]
     },
     {
-      "id": 14,
-      "type": "PreviewImage",
+      "id": 15,
+      "type": "IndustrialMagick",
       "pos": [
-        1690,
-        613.1457233886728
+        0,
+        10
       ],
       "size": [
-        210,
-        250
+        320,
+        386
       ],
       "flags": {},
-      "order": 12,
+      "order": 1,
       "mode": 0,
-      "inputs": [
+      "outputs": [
         {
-          "name": "images",
+          "name": "image",
           "type": "IMAGE",
-          "link": 12
+          "links": [
+            13
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "image_path",
+          "type": "STRING",
+          "links": [
+            14
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "error",
+          "type": "STRING",
+          "links": [
+            15
+          ],
+          "shape": 3,
+          "slot_index": 2
         }
       ],
       "properties": {
-        "Node name for S&R": "PreviewImage"
-      }
+        "Node name for S&R": "IndustrialMagick"
+      },
+      "widgets_values": [
+        true,
+        10,
+        10,
+        "-size",
+        "320x100",
+        "xc:lightblue",
+        "-pointsize",
+        "36",
+        "-fill",
+        "blue",
+        "-draw",
+        "text 25,65 'Industrial Magick'",
+        "E:\\industrial-magick-test.png",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
     },
     {
-      "id": 5,
-      "type": "CR Text",
+      "id": 6,
+      "type": "IndustrialMagick",
       "pos": [
-        780,
-        60
+        0,
+        490
       ],
       "size": [
-        680,
-        96
+        320,
+        360
       ],
       "flags": {},
       "order": 2,
       "mode": 0,
       "outputs": [
         {
-          "name": "text",
-          "type": "*",
-          "links": null,
-          "shape": 3
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            9
+          ],
+          "shape": 3,
+          "slot_index": 0
         },
         {
-          "name": "show_help",
+          "name": "image_path",
           "type": "STRING",
-          "links": null,
-          "shape": 3
+          "links": [
+            5
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "error",
+          "type": "STRING",
+          "links": [
+            6
+          ],
+          "shape": 3,
+          "slot_index": 2
         }
       ],
-      "title": "Sample ImageMagick command",
       "properties": {
-        "Node name for S&R": "CR Text"
+        "Node name for S&R": "IndustrialMagick"
       },
       "widgets_values": [
-        "magick -size 320x100 xc:lightblue  -pointsize 36 -fill blue -draw \"text 25,65 'Industrial Magick'\" text_draw.gif"
+        true,
+        false,
+        9,
+        "-size",
+        "320x100",
+        "xc:lightblue",
+        "-pointsize",
+        "36",
+        "-fill",
+        "blue",
+        "-draw",
+        "text 25,65 'Industrial Magick'",
+        "E:\\industrial-magick-test.png",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
       ]
     }
   ],
   "links": [
-    [
-      1,
-      1,
-      0,
-      2,
-      0,
-      "IMAGE"
-    ],
-    [
-      2,
-      1,
-      1,
-      3,
-      0,
-      "STRING"
-    ],
-    [
-      3,
-      1,
-      2,
-      4,
-      0,
-      "STRING"
-    ],
     [
       5,
       6,
@@ -756,6 +735,30 @@
       14,
       0,
       "IMAGE"
+    ],
+    [
+      13,
+      15,
+      0,
+      2,
+      0,
+      "IMAGE"
+    ],
+    [
+      14,
+      15,
+      1,
+      3,
+      0,
+      "STRING"
+    ],
+    [
+      15,
+      15,
+      2,
+      4,
+      0,
+      "STRING"
     ]
   ],
   "groups": [
@@ -763,9 +766,9 @@
       "title": "By default, no image is passed",
       "bounding": [
         -10,
-        -44,
+        -64,
         710,
-        446
+        470
       ],
       "color": "#3f789e",
       "font_size": 24,
@@ -801,8 +804,8 @@
     "ds": {
       "scale": 0.7513148009015777,
       "offset": [
-        271.0632514000008,
-        213.48768121772977
+        264.40825140000055,
+        288.02368121772975
       ]
     }
   },

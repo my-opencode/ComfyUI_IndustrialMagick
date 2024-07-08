@@ -4,6 +4,7 @@ import numpy as np
 import os
 import subprocess
 import torch
+import uuid
 from PIL import Image, ImageOps, ImageSequence
 
 comfy_path = os.path.dirname(folder_paths.__file__)
@@ -21,12 +22,27 @@ def read_image_from_path(image_path):
         image = torch.from_numpy(image)[None,]
     return image
 
+def get_image_temp_path():
+    now = datetime.datetime.now()
+    timestamp = now.strftime("%Y%m%d_%H%M%S")
+    img_file_name = f'ImageMagick_{timestamp}.png'
+    if not os.path.exists(tmp_path):
+        os.makedirs(tmp_path)
+    img_full_path = f'{tmp_path}/{img_file_name}'
+    img_full_path = os.path.normpath(img_full_path)
+    if os.path.exists(img_full_path):
+        random_suffix = uuid.uuid4().hex
+        img_file_name = f'ImageMagick_{timestamp}_{random_suffix}.png'
+        img_full_path = os.path.join(tmp_path, img_file_name)
+    return img_full_path
+
 class IndustrialMagick:
     @classmethod
     def INPUT_TYPES(cls):
         inputs = {
             "required": {
                 "return_image": ("BOOLEAN", {"default": False}),
+                "last_param_is_save_path": ("BOOLEAN", {"default": False}),
                 "param_count": ("INT", {"default": 5, "min": 0, "max": 50, "step": 1})
             }
         }
@@ -39,11 +55,14 @@ class IndustrialMagick:
     FUNCTION = "execute"
     CATEGORY = "IndustrialMagick"
 
-    def execute(self, return_image, param_count, **kwargs):
+    def execute(self, return_image, last_param_is_save_path, param_count, **kwargs):
         # Extract values from kwargs
         params = [kwargs.get(f"param_{i}") for i in range(1, param_count + 1)]
 
         params.insert(0,"magick")
+
+        if(last_param_is_save_path is False):
+            params.append(get_image_temp_path())
 
         filtered_params = [param for param in params if param not in ["",None]]
 
@@ -76,17 +95,7 @@ class IndustrialMagickImageIngest:
         for (batch_number, ii) in enumerate(image):
             i = 255. * ii.cpu().numpy()
             img = Image.fromarray(np.clip(i, 0, 255).astype(np.uint8))
-            now = datetime.datetime.now()
-            timestamp = now.strftime("%Y%m%d_%H%M%S")
-            img_file_name = f'ImageMagick_{timestamp}.png'
-            if not os.path.exists(tmp_path):
-                os.makedirs(tmp_path)
-            img_full_path = f'{tmp_path}/{img_file_name}'
-            img_full_path = os.path.normpath(img_full_path)
-            if os.path.exists(img_full_path):
-                random_suffix = uuid.uuid4().hex
-                img_file_name = f'ImageMagick_{timestamp}_{random_suffix}.png'
-                img_full_path = os.path.join(tmp_path, img_file_name)
+            img_full_path = get_image_temp_path()
             img.save(img_full_path)
         return (img_full_path,)
 

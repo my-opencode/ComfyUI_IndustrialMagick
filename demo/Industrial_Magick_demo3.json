@@ -1,0 +1,597 @@
+{
+  "last_node_id": 8,
+  "last_link_id": 9,
+  "nodes": [
+    {
+      "id": 1,
+      "type": "CR Text",
+      "pos": [
+        300,
+        150
+      ],
+      "size": {
+        "0": 400,
+        "1": 180
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "text",
+          "type": "*",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text"
+      },
+      "widgets_values": [
+        "magick montage -size 100x20 xc:grey21 -duplicate 10 -tile 2x -geometry +4+4 -background grey53 miff:- | magick -size 224x40 xc:grey53 -fill grey21 -draw \"rectangle 8,8 216,40\" \\( - -bordercolor grey53 -border 4 \\) -append E:\\test.png\n"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "PreviewImage",
+      "pos": [
+        1590,
+        320
+      ],
+      "size": {
+        "0": 210,
+        "1": 250
+      },
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 4,
+      "type": "CR Split String",
+      "pos": [
+        740,
+        50
+      ],
+      "size": {
+        "0": 315,
+        "1": 162
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "string_1",
+          "type": "*",
+          "links": [
+            2
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "string_2",
+          "type": "*",
+          "links": [
+            3
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "string_3",
+          "type": "*",
+          "links": [
+            4
+          ],
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "string_4",
+          "type": "*",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Split String"
+      },
+      "widgets_values": [
+        "-size 224x40 xc:grey53",
+        " "
+      ]
+    },
+    {
+      "id": 5,
+      "type": "CR Split String",
+      "pos": [
+        740,
+        260
+      ],
+      "size": {
+        "0": 315,
+        "1": 162
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "string_1",
+          "type": "*",
+          "links": [
+            5
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "string_2",
+          "type": "*",
+          "links": [
+            6
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "string_3",
+          "type": "*",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "string_4",
+          "type": "*",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Split String"
+      },
+      "widgets_values": [
+        "-fill grey21",
+        " "
+      ]
+    },
+    {
+      "id": 6,
+      "type": "Simple String",
+      "pos": [
+        750,
+        610
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            7
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Simple String"
+      },
+      "widgets_values": [
+        "-draw"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "Simple String",
+      "pos": [
+        750,
+        730
+      ],
+      "size": {
+        "0": 315,
+        "1": 58
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            8
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Simple String"
+      },
+      "widgets_values": [
+        "rectangle 8,8 216,40"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "IndustrialMagick",
+      "pos": [
+        1220,
+        320
+      ],
+      "size": [
+        320,
+        462
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "param_1",
+          "type": "STRING",
+          "link": 2,
+          "widget": {
+            "name": "param_1"
+          }
+        },
+        {
+          "name": "param_2",
+          "type": "STRING",
+          "link": 3,
+          "widget": {
+            "name": "param_2"
+          }
+        },
+        {
+          "name": "param_3",
+          "type": "STRING",
+          "link": 4,
+          "widget": {
+            "name": "param_3"
+          }
+        },
+        {
+          "name": "param_4",
+          "type": "STRING",
+          "link": 5,
+          "widget": {
+            "name": "param_4"
+          }
+        },
+        {
+          "name": "param_5",
+          "type": "STRING",
+          "link": 6,
+          "widget": {
+            "name": "param_5"
+          }
+        },
+        {
+          "name": "param_6",
+          "type": "STRING",
+          "link": 7,
+          "widget": {
+            "name": "param_6"
+          }
+        },
+        {
+          "name": "param_7",
+          "type": "STRING",
+          "link": 8,
+          "widget": {
+            "name": "param_7"
+          }
+        },
+        {
+          "name": "param_10",
+          "type": "STRING",
+          "link": 9,
+          "widget": {
+            "name": "param_10"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            1
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "image_path",
+          "type": "STRING",
+          "links": null,
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "error",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IndustrialMagick"
+      },
+      "widgets_values": [
+        true,
+        false,
+        17,
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "(",
+        "",
+        "",
+        "",
+        "-bordercolor",
+        "grey53",
+        "-border",
+        "4",
+        ")",
+        "-append",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "id": 2,
+      "type": "IndustrialMagick",
+      "pos": [
+        330,
+        450
+      ],
+      "size": [
+        320,
+        530
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "image_path",
+          "type": "STRING",
+          "links": [
+            9
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "error",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IndustrialMagick"
+      },
+      "widgets_values": [
+        false,
+        false,
+        16,
+        "montage",
+        "",
+        "-size",
+        "100x20",
+        "xc:grey21",
+        "",
+        "",
+        "",
+        "-duplicate",
+        "6",
+        "-tile",
+        "2x",
+        "-geometry",
+        "+4+4",
+        "-background",
+        "grey53",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      8,
+      0,
+      3,
+      0,
+      "IMAGE"
+    ],
+    [
+      2,
+      4,
+      0,
+      8,
+      0,
+      "STRING"
+    ],
+    [
+      3,
+      4,
+      1,
+      8,
+      1,
+      "STRING"
+    ],
+    [
+      4,
+      4,
+      2,
+      8,
+      2,
+      "STRING"
+    ],
+    [
+      5,
+      5,
+      0,
+      8,
+      3,
+      "STRING"
+    ],
+    [
+      6,
+      5,
+      1,
+      8,
+      4,
+      "STRING"
+    ],
+    [
+      7,
+      6,
+      0,
+      8,
+      5,
+      "STRING"
+    ],
+    [
+      8,
+      7,
+      0,
+      8,
+      6,
+      "STRING"
+    ],
+    [
+      9,
+      2,
+      1,
+      8,
+      7,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6830134553650705,
+      "offset": [
+        461.94570000000044,
+        128.34500000000008
+      ]
+    }
+  },
+  "version": 0.4
+}
