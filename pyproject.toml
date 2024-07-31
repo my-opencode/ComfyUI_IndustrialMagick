@@ -2,7 +2,7 @@
 name = "comfyui_industrialmagick"
 description = "[a/ImageMagick](https://imagemagick.org/index.php) nodes for ComfyUI. Adds nodes to call ImageMagick subprocesses from ComfyUI.\nRequirements: [a/ImagMagick7](https://imagemagick.org/script/download.php), 'magick' command in your CLI environment."
 version = "2.0.0"
-license = "LICENSE"
+license = { file = "LICENSE" }
 
 [project.urls]
 Repository = "https://github.com/my-opencode/ComfyUI_IndustrialMagick"
